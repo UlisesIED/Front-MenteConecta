@@ -17,7 +17,7 @@ export function NavBar() {
                         <li><a href="#features">Caracteristicas</a></li>
                         <li><a href="#faq">Preguntas Frecuentes</a></li>
 
-                        <li><a href="http://18.212.151.35">Iniciar sesión</a></li>
+                        <li><a href="http://menteconecta.net/jupyterhub/">Iniciar sesión</a></li>
                     </ul>
                     <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
                 </nav>
