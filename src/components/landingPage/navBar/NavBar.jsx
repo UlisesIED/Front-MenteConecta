@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 
 export function NavBar() {
 
@@ -17,7 +17,7 @@ export function NavBar() {
                         <li><a href="#features">Caracteristicas</a></li>
                         <li><a href="#faq">Preguntas Frecuentes</a></li>
 
-                        <li><a href="http://menteconecta.net/jupyterhub/">Iniciar sesión</a></li>
+                        <li><Link to="/login"><a href="/login">Iniciar sesión</a></Link></li>
                     </ul>
                     <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
                 </nav>

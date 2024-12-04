@@ -1,8 +1,7 @@
 // useAppEffects.js
+import AOS from 'aos';
+import GLightbox from 'glightbox';
 import { useEffect } from 'react';
-import AOS from 'aos'; // Asegúrate de instalar AOS si lo usas
-import GLightbox from 'glightbox'; // Asegúrate de instalar GLightbox si lo usas
-
 const useAppEffects = () => {
     useEffect(() => {
         const toggleScrolled = () => {

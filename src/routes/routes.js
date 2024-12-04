@@ -1,7 +1,7 @@
 import routesLanding from "./routes.landing";
 
 const routes = [
-    ...routesLanding
+    ...routesLanding,
 ]
 
 export default routes;
