@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import { Form } from 'react-bootstrap';
 import { GiBrain, GiMaterialsScience } from "react-icons/gi";
-import { IconButton } from '../../components/ui';
 
+import { IconButton, InputForm } from '../../components/ui';
 import './LoginPage.css';
 
 export function LoginPage() {
@@ -10,6 +11,7 @@ export function LoginPage() {
 
     const selection = [
         <SelectLogin setSelect={setSelect} />,
+        <LoginMenteConecta />
     ]
 
     return selection[select]
@@ -32,18 +34,37 @@ function SelectLogin(props) {
 
                     onChangeMethod={() => setSelect(1)}
                 />
-                <a href=''>
-
+                <a href='http://menteconecta.net/jupyterhub/'>
+                    <IconButton
+                        text="Jupyter Notebook"
+                        icon={<GiMaterialsScience />}
+                        color="cadetblue"
+                        size="xl"
+                    />
                 </a>
-                <IconButton
-                    text="Jupyter Notebook"
-                    icon={<GiMaterialsScience />}
-                    color="cadetblue"
-                    size="xl"
-                />
             </div>
             <br />
             <br />
         </div>
+    )
+}
+
+function LoginMenteConecta() {
+    return (
+        <Form>
+            <InputForm
+                label="Usuario"
+                labelDirection="center"
+                nameInput="login"
+                placeHolderInput="username"
+                valueInput=""
+                onChangeInput={(e) => console.log(e)}
+                type="text"
+                error=""
+                touched=""
+                size="sm"
+                accept=""
+            />
+        </Form>
     )
 }

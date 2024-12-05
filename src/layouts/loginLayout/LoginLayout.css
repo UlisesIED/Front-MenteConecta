@@ -6,7 +6,8 @@
     .sub-conteiner {
         max-width: 600px;
         background-color: aliceblue;
-        max-height: 600px;
+        max-height: 380px;
+        min-height: 380px;
         margin: 10px auto;
         border-radius: 0.5rem;
         padding: 15px;
