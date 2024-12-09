@@ -17,7 +17,7 @@ export function NavBar() {
                         <li><a href="#features">Caracteristicas</a></li>
                         <li><a href="#faq">Preguntas Frecuentes</a></li>
 
-                        <li><Link to="/login"><a href="/login">Iniciar sesión</a></Link></li>
+                        <li><Link to="/admin">Iniciar sesión</Link></li>
                     </ul>
                     <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
                 </nav>

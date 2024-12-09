@@ -14,23 +14,26 @@ export function InputForm(props) {
 
 
     return (
-        <Form.Group className={col} >
+        <Form.Group className={`${col} conteiner-input`} >
             <Form.Label className={labelDirection}>{label}</Form.Label>
-            <Form.Control
-                className={`input-control ${labelDirection}`}
-                name={nameInput}
-                type={type}
-                accept={accept}
-                placeholder={placeHolderInput}
-                rows={rows}
-                value={valueInput}
-                onChange={onChangeInput}
-                disabled={disabled}
-                size={size}
-                style={{
-                    borderColor: touched && error ? "red" : "#0f7ae6"
-                }}
-            />
+            <center>
+                <Form.Control
+                    className={`input-control ${labelDirection}`}
+                    name={nameInput}
+                    type={type}
+                    accept={accept}
+                    placeholder={placeHolderInput}
+                    rows={rows}
+                    value={valueInput}
+                    onChange={onChangeInput}
+                    disabled={disabled}
+                    size={size}
+                    style={{
+                        borderColor: touched && error ? "red" : "#0f7ae6",
+                        width: "22rem"
+                    }}
+                />
+            </center>
             <Form.Text className="text-danger">
                 {touched && error ?
                     <center><b><div className="text-danger">{error}</div></b></center>

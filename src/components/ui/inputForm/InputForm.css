@@ -1,3 +1,7 @@
+.conteiner-input {
+    margin-bottom: 1rem;
+}
+
 .center {
     display: flex;
     justify-content: center;
